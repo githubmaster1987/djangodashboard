@@ -1,0 +1,42 @@
+from django.conf.urls import url
+
+from . import views
+
+app_name = 'Admin'
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^index2/$', views.index2, name='index2'),
+    url(r'^widget/$', views.widget, name='widget'),
+	url(r'^chartjs/$', views.chartjs, name='chartjs'),
+    url(r'^morris/$', views.morris, name='morris'),
+	url(r'^flot/$', views.flot, name='flot'),
+	url(r'^inline/$', views.inline, name='inline'),
+	url(r'^general/$', views.general, name='general'),
+	url(r'^icons/$', views.icons, name='icons'),
+	url(r'^buttons/$', views.buttons, name='buttons'),
+	url(r'^sliders/$', views.sliders, name='sliders'),
+	url(r'^timeline/$', views.timeline, name='timeline'),
+	url(r'^modals/$', views.modals, name='modals'),
+	url(r'^timeline/$', views.timeline, name='timeline'),
+	url(r'^form_general/$', views.form_general, name='form_general'),
+	url(r'^advanced/$', views.advanced, name='advanced'),
+	url(r'^calendar/$', views.calendar, name='calendar'),
+	url(r'^editors/$', views.editors, name='editors'),
+	url(r'^simple/$', views.simple, name='simple'),
+	url(r'^data/$', views.data, name='data'),
+	url(r'^invoice/$', views.invoice, name='invoice'),
+	url(r'^invoice_print/$', views.invoice_print, name='invoice_print'),
+	url(r'^profile/$', views.profile, name='profile'),
+	url(r'^login/$', views.login, name='login'),
+	url(r'^register/$', views.register, name='register'),
+	url(r'^lockscreen/$', views.lockscreen, name='lockscreen'),
+	url(r'^four04/$', views.four04, name='four04'),
+	url(r'^five00/$', views.five00, name='five00'),
+	url(r'^blank/$', views.blank, name='blank'),
+	url(r'^place/$', views.place, name='place'),
+	url(r'^top_nav/$', views.top_nav, name='top_nav'),
+	url(r'^boxed/$', views.boxed, name='boxed'),
+	url(r'^fixed/$', views.fixed, name='fixed'),
+	url(r'^collapsed_sidebar/$', views.collapsed_sidebar, name='collapsed_sidebar'),
+	url(r'^mailbox/$', views.mailbox, name='mailbox'),
+]
